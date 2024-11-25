@@ -2,7 +2,9 @@ import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faPlusCircle, faHome, faCog, faBell, faPaw, faHeadset, faDoorOpen, faQuestionCircle, faChartLine, faClipboard, faHeart, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { useNavigate } from 'react-router-dom';
-
+import './Header.css'; // Crea un archivo CSS para los estilos del encabezado
+import headerImage from '../../image/mascotas.jpg'; // Ajusta la ruta según tu proyecto
+import Mascotas from './screens/mascotas/Mascotas';
 import './Mascotas.css';
 import SembraImage from '../../image/sembra.jpg';
 import SabanaImage from '../../image/sabana.jpg';
@@ -53,7 +55,7 @@ import Perro40 from '../../image/perro40.jpg';
 const mascotasData = [
     { id: 1, nombre: 'Bobby', descripcion: 'Un perro juguetón que ama los paseos.', imagen: Perro01 },
     { id: 2, nombre: 'Mimi', descripcion: 'Una gata muy cariñosa y tranquila.', imagen: Perro02 },
-    { id: 3, nombre: 'Rex', descripcion: 'Un perro guardián leal y valiente.', imagen: Perro03 },
+    { id: 3, nombre: 'Rex', descripcion: 'Aguila pecho rojo rescatada de vendedores en mercado negro, es muy amigable te gustaria darle hogar?.', imagen: Perro03 },
     { id: 4, nombre: 'Max', descripcion: 'Un conejo pequeño y adorable.', imagen: Perro04 },
     { id: 5, nombre: 'Rocky', descripcion: 'Un perro protector y fuerte.', imagen: Perro05 },
     { id: 6, nombre: 'Bella', descripcion: 'Una perra amorosa y sociable.', imagen: Perro06 },
@@ -96,6 +98,8 @@ const mascotasData = [
     { id: 44, nombre: 'Max', descripcion: 'Un conejo pequeño y adorable.', imagen: SalvajesImage },
 ];
 
+
+
 const Mascotas = () => {
   const [seleccionada, setSeleccionada] = useState(null);
   const [isNavHovered, setIsNavHovered] = useState(false);
@@ -120,6 +124,7 @@ const Mascotas = () => {
   };
 
   return (
+  
     <div className="mascotas-container">
       {/* Barra de navegación */}
       <div
@@ -179,7 +184,7 @@ const Mascotas = () => {
           </div>
         </div>
       </div>
-
+  
       {/* Contenido principal */}
       <div className="mascotas-content">
         <div className="mascotas-grid">

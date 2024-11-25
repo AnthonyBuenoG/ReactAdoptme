@@ -117,3 +117,20 @@
   color: darkred; /* Color más oscuro al pasar el ratón */
 }
 
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #fff; /* Opcional, para fondo blanco */
+}
+
+.header-image {
+  width: 100%;
+  height: auto;
+}
+
+body {
+  margin-top: 150px; /* Ajusta según la altura de tu imagen */
+}
