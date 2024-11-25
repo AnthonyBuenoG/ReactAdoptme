@@ -2,9 +2,6 @@ import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faPlusCircle, faHome, faCog, faBell, faPaw, faHeadset, faDoorOpen, faQuestionCircle, faChartLine, faClipboard, faHeart, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { useNavigate } from 'react-router-dom';
-import './Header.css'; // Crea un archivo CSS para los estilos del encabezado
-import headerImage from '../../image/mascotas.jpg'; // Ajusta la ruta según tu proyecto
-import Mascotas from './screens/mascotas/Mascotas';
 import './Mascotas.css';
 import SembraImage from '../../image/sembra.jpg';
 import SabanaImage from '../../image/sabana.jpg';
@@ -98,8 +95,6 @@ const mascotasData = [
     { id: 44, nombre: 'Max', descripcion: 'Un conejo pequeño y adorable.', imagen: SalvajesImage },
 ];
 
-
-
 const Mascotas = () => {
   const [seleccionada, setSeleccionada] = useState(null);
   const [isNavHovered, setIsNavHovered] = useState(false);
@@ -123,10 +118,29 @@ const Mascotas = () => {
     navigate('/profile');  // Redirige a la ruta '/profile'
   };
 
-  return (
-  
+  // Crear un contenedor para la imagen
+const imageContainer = document.createElement('div');
+imageContainer.style.textAlign = 'center';
+imageContainer.style.marginBottom = '20px';
+
+// Crear la imagen
+const image = document.createElement('img');
+image.src = MascotasImage; // Cambia esta ruta por la de tu imagen
+image.alt = 'Imagen Superior';
+image.style.width = '100%';
+image.style.maxHeight = '100px';
+image.style.objectFit = 'cover';
+image.style.borderRadius = '10px';
+
+// Agregar la imagen al contenedor
+imageContainer.appendChild(image);
+
+// Agregar el contenedor al cuerpo del documento
+document.body.insertBefore(imageContainer, document.body.firstChild);
+
+  return ( 
     <div className="mascotas-container">
-      {/* Barra de navegación */}
+      {}
       <div
         className={`nav-bar ${isNavHovered ? 'nav-bar-hovered' : ''}`}
         onMouseEnter={() => setIsNavHovered(true)}
@@ -184,7 +198,6 @@ const Mascotas = () => {
           </div>
         </div>
       </div>
-  
       {/* Contenido principal */}
       <div className="mascotas-content">
         <div className="mascotas-grid">
@@ -223,6 +236,7 @@ const Mascotas = () => {
         </div>
       )}
     </div>
+    
   );
 };
 

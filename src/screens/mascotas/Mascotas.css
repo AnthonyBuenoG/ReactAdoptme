@@ -126,11 +126,14 @@
   background-color: #fff; /* Opcional, para fondo blanco */
 }
 
-.header-image {
-  width: 100%;
-  height: auto;
+.header-image-container {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-body {
-  margin-top: 150px; /* Ajusta según la altura de tu imagen */
+.header-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
 }
