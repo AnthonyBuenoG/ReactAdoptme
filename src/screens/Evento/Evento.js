@@ -31,7 +31,7 @@ const Evento = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const { eventDate } = formData;
-    setMessage(`Evento creado, te esperamos el ${eventDate}`);
+    setMessage(`Evento creado, te esperamos el ${eventDate}, por favor espera tu notificación`);
     setTimeout(() => setMessage(''), 3000);
     setFormData({
       firstName: '',
@@ -164,9 +164,9 @@ const Evento = () => {
         </div>
 
         <div className="button-container">
-          <button type="submit" className="submit-button">Submit</button>
+          <button type="submit" className="submit-button">Enviar evento</button>
           <button type="button" className="cancel-button" onClick={handleCancel}>
-            Cancel Event
+          Cancelar evento
           </button>
         </div>
       </form>

@@ -1,0 +1,154 @@
+/* General body styles */
+body {
+    background-color: #f5f5f5; /* Fondo claro general */
+    color: #121212;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Contenedor principal */
+  .adopciones-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* Si no hay imágenes, centrar el formulario */
+  .adopciones-container.no-images {
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Formulario con fondo negro */
+  .adopciones-form {
+    background: #121212; /* Fondo negro solo en el formulario */
+    padding: 20px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    width: 100%;
+    max-width: 400px;
+    color: #ffffff; /* Texto claro */
+  }
+  
+  .adopciones-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-size: 1.5em;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+    position: relative;
+  }
+  
+  .form-group label {
+    display: flex;
+    align-items: center;
+    font-size: 0.9em;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #ffffff;
+  }
+  
+  .form-group .icon {
+    margin-right: 8px;
+    color: #42a5f5; /* Azul claro */
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px 10px 10px 40px;
+    font-size: 1em;
+    border: 1px solid #424242;
+    border-radius: 8px;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.3s ease;
+    background: #333333;
+    color: #ffffff;
+  }
+  
+  textarea {
+    resize: none;
+    height: 80px;
+  }
+  
+  button {
+    width: 100%;
+    background: #42a5f5;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background: #2196f3;
+  }
+  
+  /* Drag-drop area */
+  .drag-drop-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border: 2px dashed #42a5f5;
+    border-radius: 8px;
+    color: #42a5f5;
+    background: #1e1e1e;
+    cursor: pointer;
+    margin-bottom: 15px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .drag-drop-area.dragging {
+    background: #333333;
+  }
+  
+  .drag-drop-area input {
+    display: none;
+  }
+  
+  /* Image preview */
+  .image-preview {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .image-preview img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease;
+  }
+  
+  .image-preview img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Popup message */
+  .mensaje-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #424242;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    z-index: 1000;
+  }
+  

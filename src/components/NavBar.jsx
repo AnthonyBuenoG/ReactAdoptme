@@ -10,12 +10,18 @@ const links = [
         name: "Profile",
         href: "/profile",
     },
-    ,
-     {
+    {
         name: "Evento",
         href: "/evento",
     },
-    
+    {
+        name:"Favoritos",
+        href:"/favoritos"
+    },
+    {
+        name:"Adopciones",
+        href:"/adopciones"
+    }    
 ];
 
 const NavBar = () => {

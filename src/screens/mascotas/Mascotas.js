@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser, faPlusCircle, faHome, faCog, faBell, faPaw, faHeadset, faDoorOpen, faQuestionCircle, faChartLine, faClipboard, faHeart, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { faUser, faPlusCircle, faBell, faPaw, faHeadset, faDoorOpen, faQuestionCircle, faChartLine, faClipboard, faHeart, faTimes, faShieldAlt } from '@fortawesome/free-solid-svg-icons';
 import { useNavigate } from 'react-router-dom';
 import './Mascotas.css';
 import SembraImage from '../../image/sembra.jpg';
@@ -121,14 +121,25 @@ const Mascotas = () => {
   const Evento = () => {
     navigate('/evento');  // Redirige a la ruta '/profile'
   };
+  const Favoritos = () => {
+    navigate('/favoritos');  // Redirige a la ruta '/profile'
+  };
+
+  const Homee = () => {
+    navigate('/home');  // Redirige a la ruta '/profile'
+  };
+  
+  const Adopciones = () => {
+    navigate('/adopciones');  // Redirige a la ruta '/profile'
+  };
+  const Maltrato = () => {
+    navigate('/maltrato');  // Redirige a la ruta '/profile'
+  };
 
   // Crear un contenedor para la imagen
 const imageContainer = document.createElement('div');
 imageContainer.style.textAlign = 'center';
 imageContainer.style.marginBottom = '20px';
-
-
-
   return ( 
     <div className="mascotas-container">
       {}
@@ -147,27 +158,23 @@ imageContainer.style.marginBottom = '20px';
             <FontAwesomeIcon icon={faPlusCircle} />
             {isNavHovered && <span>Crear Evento</span>}
           </div>
-          <div className="nav-item" onClick={() => navigate('/home')}>
-            <FontAwesomeIcon icon={faHome} />
-            {isNavHovered && <span>Estado</span>}
+          <div className="nav-item" onClick={Adopciones}>
+            <FontAwesomeIcon icon={faPaw} />
+            {isNavHovered && <span>Dar en Adopcion</span>}
           </div>
-          <div className="nav-item" onClick={() => navigate('/settings')}>
-            <FontAwesomeIcon icon={faCog} />
-            {isNavHovered && <span>Configuración</span>}
+          <div className="nav-item" onClick={Maltrato}>
+            <FontAwesomeIcon icon={faShieldAlt} />
+            {isNavHovered && <span>Maltrto Animal</span>}
           </div>
           <div className="nav-item" onClick={() => navigate('/notifications')}>
             <FontAwesomeIcon icon={faBell} />
             {isNavHovered && <span>Notificaciones</span>}
           </div>
-          <div className="nav-item" onClick={() => navigate('/mascotas')}>
-            <FontAwesomeIcon icon={faPaw} />
-            {isNavHovered && <span>Mis Mascotas</span>}
-          </div>
           <div className="nav-item" onClick={() => navigate('/support')}>
             <FontAwesomeIcon icon={faHeadset} />
             {isNavHovered && <span>Soporte</span>}
           </div>
-          <div className="nav-item" onClick={() => navigate('/favorites')}>
+          <div className="nav-item" onClick={Favoritos}>
             <FontAwesomeIcon icon={faHeart} />
             {isNavHovered && <span>Favoritos</span>}
           </div>
@@ -183,7 +190,7 @@ imageContainer.style.marginBottom = '20px';
             <FontAwesomeIcon icon={faQuestionCircle} />
             {isNavHovered && <span>Ayuda</span>}
           </div>
-          <div className="nav-item" onClick={() => navigate('/logout')}>
+          <div className="nav-item" onClick={Homee}>
             <FontAwesomeIcon icon={faDoorOpen} />
             {isNavHovered && <span>Cerrar Sesión</span>}
           </div>
