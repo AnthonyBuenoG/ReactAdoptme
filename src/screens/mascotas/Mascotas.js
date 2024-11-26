@@ -40,6 +40,8 @@ import Perro38 from '../../image/perro38.jpg';
 import Perro39 from '../../image/perro39.jpg';
 import Perro40 from '../../image/perro40.jpg';
 
+import Banner from '../../image/banner.png';
+
 
 
 const mascotasData = [
@@ -159,6 +161,9 @@ imageContainer.style.marginBottom = '20px';
       </div>
       {}
       <div className="mascotas-content">
+        <div className='banner'>
+          <img src={Banner}></img>
+          </div>
         <div className="mascotas-grid">
           {mascotasData.map((mascota) => (
             <div
@@ -184,6 +189,9 @@ imageContainer.style.marginBottom = '20px';
           >
             <FontAwesomeIcon icon={faTimes} />
           </button>
+          <br/>
+          <br/>
+          <br/>
           <img src={seleccionada.imagen} alt={seleccionada.nombre} />
           <div className="mascota-detalle-info">
             <h2>{seleccionada.nombre}</h2>
