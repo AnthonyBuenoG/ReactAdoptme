@@ -118,25 +118,16 @@ const Mascotas = () => {
     navigate('/profile');  // Redirige a la ruta '/profile'
   };
 
+  const Evento = () => {
+    navigate('/evento');  // Redirige a la ruta '/profile'
+  };
+
   // Crear un contenedor para la imagen
 const imageContainer = document.createElement('div');
 imageContainer.style.textAlign = 'center';
 imageContainer.style.marginBottom = '20px';
 
-// Crear la imagen
-const image = document.createElement('img');
-image.src = MascotasImage; // Cambia esta ruta por la de tu imagen
-image.alt = 'Imagen Superior';
-image.style.width = '100%';
-image.style.maxHeight = '100px';
-image.style.objectFit = 'cover';
-image.style.borderRadius = '10px';
 
-// Agregar la imagen al contenedor
-imageContainer.appendChild(image);
-
-// Agregar el contenedor al cuerpo del documento
-document.body.insertBefore(imageContainer, document.body.firstChild);
 
   return ( 
     <div className="mascotas-container">
@@ -152,7 +143,7 @@ document.body.insertBefore(imageContainer, document.body.firstChild);
             <FontAwesomeIcon icon={faUser} />
             {isNavHovered && <span>Ver Perfil</span>}
           </div>
-          <div className="nav-item" onClick={() => navigate('/create-event')}>
+          <div className="nav-item" onClick={Evento}>
             <FontAwesomeIcon icon={faPlusCircle} />
             {isNavHovered && <span>Crear Evento</span>}
           </div>

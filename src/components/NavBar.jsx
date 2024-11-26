@@ -10,6 +10,11 @@ const links = [
         name: "Profile",
         href: "/profile",
     },
+    ,
+     {
+        name: "Evento",
+        href: "/evento",
+    },
     
 ];
 
