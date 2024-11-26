@@ -25,9 +25,6 @@ import Perro19 from '../../image/perro19.jpg';
 import Perro20 from '../../image/cabra.jpg';
 import Perro21 from '../../image/avestruz.jpg';
 import Perro22 from '../../image/ggg.jpg';
-import Perro23 from '../../image/perro23.jpg';
-import Perro24 from '../../image/perro24.jpg';
-import Perro25 from '../../image/perro25.jpg';
 import Perro26 from '../../image/perro26.jpg';
 import Perro27 from '../../image/perro27.jpg';
 import Perro28 from '../../image/perro28.jpg';
@@ -55,7 +52,7 @@ const mascotasData = [
     { id: 7, nombre: 'Charlie', descripcion: 'Charlie fue encontrado cerca de un arroyo muy herido por cazadores furtivos hace 3 años, ahora es un amante del salmon e bayas salvajes.', imagen: Perro07 },
     { id: 8, nombre: 'Daisy', descripcion: 'Margarita sufre de de asma en ambientes secos asi que necesita un buen cuidado, pero eso no es excepcion para darle la mejor vida.', imagen: Perro08 },
     { id: 9, nombre: 'Luna', descripcion: 'Lunita es nuestra bebe, rescatada de mas cazadores que la separaron de su mama, asi que decimos convertirnos en su mama.', imagen: Perro09 },
-    { id: 10, nombre: 'Juan', descripcion: 'Juan es gracioso, en ocasiones se ensucia con facilidad y llega atener un mal olor, nada que un buen baño lo arregle.', imagen: Perro10 },
+    { id: 10, nombre: 'Juan', descripcion: 'Juan es gracioso, en ocasiones se ensucia con facilidad y llega atener un mal olor, nada que un buen baño lo arregle por que huele a mierda.', imagen: Perro10 },
     { id: 11, nombre: 'Pablo', descripcion: 'Nuestro gran pirata conquistador de los 7 mares, cuidado si lo vez te puede maldecir con un conguro imposible de quitarse. Ya te encariñaste?.', imagen: Pm11 },
     { id: 12, nombre: 'Oscar', descripcion: 'Un perro curioso y juguetón.', imagen: Perro12 },
     { id: 13, nombre: 'Coco', descripcion: 'Coco es algo imperactivo con las personas de confianza,pero en ocasiones tiende a ser algo rebelde.', imagen: Perro13 },
