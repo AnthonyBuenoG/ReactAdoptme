@@ -51,7 +51,7 @@ const Evento = () => {
 
   return (
     <div className="form-container">
-      <h2>Registro de Evento</h2>
+      <h2>Registro de Evento de Cumpleaños</h2>
       <p>Registra el Evento ahora para que encuentres fechas dispoibles!!</p>
 
       <form onSubmit={handleSubmit} className="form-grid">

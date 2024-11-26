@@ -39,7 +39,7 @@ import Perro37 from '../../image/perro37.jpg';
 import Perro38 from '../../image/perro38.jpg';
 import Perro39 from '../../image/perro39.jpg';
 import Perro40 from '../../image/perro40.jpg';
-
+import Mascotass from '../../image/mascotas.jpg'
 import Banner from '../../image/banner.png';
 
 
@@ -67,7 +67,6 @@ const mascotasData = [
     { id: 20, nombre: 'Milo', descripcion: 'Milo es todo un caso, es demasiado escuridizo creo que tiene muchas ideas.', imagen: Perro20 },
     { id: 21, nombre: 'Lily', descripcion: 'Nuestra gran ave, lamentablemente sus plumas fueron arrancadas pero nada que amor y cuidados puedan mejorar su estado.', imagen: Perro21 },
     { id: 22, nombre: 'Macaron', descripcion: 'Nuestro dulcesito de azucar su edad no es impedimento para generar ternura a los usuarios.', imagen: Perro22 },
-    
     { id: 26, nombre: 'Rocky', descripcion: 'Un perro leal y protector.', imagen: Perro26 },
     { id: 27, nombre: 'Rosie', descripcion: 'Una perra cariñosa y simpática.', imagen: Perro27 },
     { id: 28, nombre: 'Jack', descripcion: 'Un perro inteligente y sociable.', imagen: Perro28 },
@@ -77,7 +76,6 @@ const mascotasData = [
     { id: 33, nombre: 'Sandy', descripcion: 'Una perra tranquila y amorosa.', imagen: Perro33 },
     { id: 34, nombre: 'Oliver', descripcion: 'Un perro divertido y travieso.', imagen: Perro34 },
     { id: 35, nombre: 'Bella', descripcion: 'Una perra con mucha energía.', imagen: Perro35 },
-    
     { id: 37, nombre: 'Sammy', descripcion: 'Un perro amigable y cariñoso.', imagen: Perro37 },
     { id: 38, nombre: 'Cleo', descripcion: 'Una perra muy juguetona.', imagen: Perro38 },
     { id: 39, nombre: 'Buddy', descripcion: 'Un perro leal y divertido.', imagen: Perro39 },
@@ -164,6 +162,9 @@ imageContainer.style.marginBottom = '20px';
         <div className='banner'>
           <img src={Banner}></img>
           </div>
+          <div className='mascotas'>
+          <img src={Mascotass}></img>
+          </div>
         <div className="mascotas-grid">
           {mascotasData.map((mascota) => (
             <div
@@ -174,7 +175,7 @@ imageContainer.style.marginBottom = '20px';
               <img src={mascota.imagen} alt={mascota.nombre} />
               <div className="mascota-info">
                 <h3>{mascota.nombre}</h3>
-              </div>
+                </div>
             </div>
           ))}
         </div>
