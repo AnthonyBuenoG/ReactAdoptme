@@ -21,7 +21,11 @@ const links = [
     {
         name:"Adopciones",
         href:"/adopciones"
-    }    
+    },   
+    {
+        name:"Maltrato",
+        href:"/maltrato"
+    }  
 ];
 
 const NavBar = () => {

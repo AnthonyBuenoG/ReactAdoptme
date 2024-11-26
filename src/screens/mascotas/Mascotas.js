@@ -1,12 +1,8 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser, faPlusCircle, faBell, faPaw, faHeadset, faDoorOpen, faQuestionCircle, faChartLine, faClipboard, faHeart, faTimes, faShieldAlt } from '@fortawesome/free-solid-svg-icons';
+import { faUser, faPlusCircle, faBell, faPaw, faDoorOpen, faTimes, faShieldAlt } from '@fortawesome/free-solid-svg-icons';
 import { useNavigate } from 'react-router-dom';
 import './Mascotas.css';
-import SembraImage from '../../image/sembra.jpg';
-import SabanaImage from '../../image/sabana.jpg';
-import MascotasImage from '../../image/mascotas.jpg';
-import SalvajesImage from '../../image/salvajes.jpg';
 import Perro01 from '../../image/perro1.jpg';
 import Perro02 from '../../image/perro2.jpg';
 import Perro03 from '../../image/perro3.jpg';
@@ -89,19 +85,14 @@ const mascotasData = [
     { id: 38, nombre: 'Cleo', descripcion: 'Una perra muy juguetona.', imagen: Perro38 },
     { id: 39, nombre: 'Buddy', descripcion: 'Un perro leal y divertido.', imagen: Perro39 },
     { id: 40, nombre: 'Bella', descripcion: 'Una perra alegre y enérgica.', imagen: Perro40 },
-    { id: 41, nombre: 'Bobby', descripcion: 'Un perro juguetón que ama los paseos.', imagen: SembraImage },
-    { id: 42, nombre: 'Mimi', descripcion: 'Una gata muy cariñosa y tranquila.', imagen: SabanaImage },
-    { id: 43, nombre: 'Rex', descripcion: 'Un perro guardián leal y valiente.', imagen: MascotasImage },
-    { id: 44, nombre: 'Max', descripcion: 'Un conejo pequeño y adorable.', imagen: SalvajesImage },
 ];
 
 const Mascotas = () => {
   const [seleccionada, setSeleccionada] = useState(null);
   const [isNavHovered, setIsNavHovered] = useState(false);
   const [showDetail, setShowDetail] = useState(true);
-  const navigate = useNavigate(); // Usamos el hook navigate para redirigir
+  const navigate = useNavigate(); 
 
-  // Función para manejar la selección de una mascota
   const seleccionarMascota = (mascota) => {
     setSeleccionada(mascota);
     setShowDetail(true);
@@ -113,30 +104,26 @@ const Mascotas = () => {
     setSeleccionada(null);
   };
 
-  // Función para navegar al perfil
   const navigateToProfile = () => {
-    navigate('/profile');  // Redirige a la ruta '/profile'
+    navigate('/profile');  
   };
 
   const Evento = () => {
-    navigate('/evento');  // Redirige a la ruta '/profile'
-  };
-  const Favoritos = () => {
-    navigate('/favoritos');  // Redirige a la ruta '/profile'
+    navigate('/evento');
   };
 
+
   const Homee = () => {
-    navigate('/home');  // Redirige a la ruta '/profile'
+    navigate('/home');  
   };
   
   const Adopciones = () => {
-    navigate('/adopciones');  // Redirige a la ruta '/profile'
+    navigate('/adopciones'); 
   };
   const Maltrato = () => {
-    navigate('/maltrato');  // Redirige a la ruta '/profile'
+    navigate('/maltrato');  
   };
 
-  // Crear un contenedor para la imagen
 const imageContainer = document.createElement('div');
 imageContainer.style.textAlign = 'center';
 imageContainer.style.marginBottom = '20px';
@@ -149,7 +136,7 @@ imageContainer.style.marginBottom = '20px';
         onMouseLeave={() => setIsNavHovered(false)}
       >
         <div className="nav-items">
-          {/* Modificar los onClick para redirigir correctamente */}
+          {}
           <div className="nav-item" onClick={navigateToProfile}>
             <FontAwesomeIcon icon={faUser} />
             {isNavHovered && <span>Ver Perfil</span>}
@@ -164,31 +151,11 @@ imageContainer.style.marginBottom = '20px';
           </div>
           <div className="nav-item" onClick={Maltrato}>
             <FontAwesomeIcon icon={faShieldAlt} />
-            {isNavHovered && <span>Maltrto Animal</span>}
+            {isNavHovered && <span>Maltrato Animal</span>}
           </div>
           <div className="nav-item" onClick={() => navigate('/notifications')}>
             <FontAwesomeIcon icon={faBell} />
             {isNavHovered && <span>Notificaciones</span>}
-          </div>
-          <div className="nav-item" onClick={() => navigate('/support')}>
-            <FontAwesomeIcon icon={faHeadset} />
-            {isNavHovered && <span>Soporte</span>}
-          </div>
-          <div className="nav-item" onClick={Favoritos}>
-            <FontAwesomeIcon icon={faHeart} />
-            {isNavHovered && <span>Favoritos</span>}
-          </div>
-          <div className="nav-item" onClick={() => navigate('/tasks')}>
-            <FontAwesomeIcon icon={faClipboard} />
-            {isNavHovered && <span>Tareas</span>}
-          </div>
-          <div className="nav-item" onClick={() => navigate('/statistics')}>
-            <FontAwesomeIcon icon={faChartLine} />
-            {isNavHovered && <span>Estadísticas</span>}
-          </div>
-          <div className="nav-item" onClick={() => navigate('/help')}>
-            <FontAwesomeIcon icon={faQuestionCircle} />
-            {isNavHovered && <span>Ayuda</span>}
           </div>
           <div className="nav-item" onClick={Homee}>
             <FontAwesomeIcon icon={faDoorOpen} />
@@ -196,7 +163,7 @@ imageContainer.style.marginBottom = '20px';
           </div>
         </div>
       </div>
-      {/* Contenido principal */}
+      {}
       <div className="mascotas-content">
         <div className="mascotas-grid">
           {mascotasData.map((mascota) => (
@@ -214,12 +181,12 @@ imageContainer.style.marginBottom = '20px';
         </div>
       </div>
 
-      {/* Detalle de la mascota seleccionada */}
+      {}
       {seleccionada && showDetail && (
         <div className="mascota-detalle">
           <button
             className="close-detail"
-            onClick={() => setShowDetail(false)} // Ocultar detalle
+            onClick={() => setShowDetail(false)} 
           >
             <FontAwesomeIcon icon={faTimes} />
           </button>

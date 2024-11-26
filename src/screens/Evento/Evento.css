@@ -1,24 +1,21 @@
-/* Aseguramos que los campos estén alineados y sincronizados */
 .form-field {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Espacia los elementos dentro de cada campo */
-    margin-bottom: 10px; /* Separación entre campos */
+    justify-content: space-between; 
+    margin-bottom: 10px; 
   }
 
-/* Centrar los botones dentro del formulario */
 .button-container {
     display: flex;
-    justify-content: center; /* Centra los botones horizontalmente */
-    gap: 20px; /* Espacio entre los botones */
-    margin-top: 20px; /* Espacio superior entre los botones y el formulario */
-    grid-column: span 2; /* Hace que el contenedor de los botones ocupe ambas columnas en el grid */
+    justify-content: center; 
+    gap: 20px; 
+    margin-top: 20px; 
+    grid-column: span 2; 
   }
 
-/* Asegúrate de que el contenedor del formulario ocupe toda la pantalla y tenga un fondo */
 .form-container {
     display: flex;
-    flex-direction: column; /* Cambié la dirección del flex a columna para que los elementos estén apilados */
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -31,7 +28,7 @@
   }
   
   .form-header {
-    margin-bottom: 20px; /* Separa el encabezado del formulario */
+    margin-bottom: 20px; 
   }
   
   h2, p {

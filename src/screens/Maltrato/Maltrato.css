@@ -1,0 +1,48 @@
+.maltrato-container {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    background-color: #fdf3e6;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    color: #b22222;
+    font-size: 2em;
+    margin-bottom: 16px;
+  }
+  
+  p {
+    font-size: 1.1em;
+    line-height: 1.6;
+  }
+  
+  .image-container {
+    margin: 20px 0;
+  }
+  
+  .sad-dog-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .report-section {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #ffe5e5;
+    border-radius: 8px;
+    border: 1px solid #ffcccc;
+  }
+  
+  .report-section strong {
+    font-size: 1.2em;
+    color: #b22222;
+  }
+  

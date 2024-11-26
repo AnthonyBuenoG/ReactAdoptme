@@ -1,11 +1,9 @@
-/* General body styles */
 body {
-    background-color: #f5f5f5; /* Fondo claro general */
+    background-color: #f5f5f5; 
     color: #121212;
     font-family: Arial, sans-serif;
   }
   
-  /* Contenedor principal */
   .adopciones-container {
     display: flex;
     justify-content: center;
@@ -14,22 +12,19 @@ body {
     padding: 20px;
   }
   
-  /* Si no hay imágenes, centrar el formulario */
   .adopciones-container.no-images {
     align-items: center;
     height: 100vh;
   }
   
-  /* Formulario con fondo negro */
   .adopciones-form {
-    background: #121212; /* Fondo negro solo en el formulario */
+    background: #121212; 
     padding: 20px 30px;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
     width: 100%;
     max-width: 400px;
-    color: #ffffff; /* Texto claro */
-  }
+    color: #ffffff; }
   
   .adopciones-form h2 {
     text-align: center;
@@ -54,7 +49,7 @@ body {
   
   .form-group .icon {
     margin-right: 8px;
-    color: #42a5f5; /* Azul claro */
+    color: #42a5f5; 
   }
   
   .form-group input,
